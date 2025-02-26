@@ -9,30 +9,30 @@ set_proxy() {
     if [[ $proxy_type == "all" ]]; then
         echo "export ALL_PROXY=\"$proxy_string\"" >> ~/.zshrc
         echo "export all_proxy=\"$proxy_string\"" >> ~/.zshrc
-        echo "export no_proxy=bmw.com.cn,azure.com,.azure.com,.amazonaws.cn,amazonaws.cn,.amazonaws.com.cn,amazonaws.com.cn,bmwgroup.com,.bmwgroup.com,127.0.0.1,localhost" >> ~/.zshrc
-        echo "export NO_PROXY=bmw.com.cn,azure.com,.azure.com,.amazonaws.cn,amazonaws.cn,.amazonaws.com.cn,amazonaws.com.cn,bmwgroup.com,.bmwgroup.com,127.0.0.1,localhost" >> ~/.zshrc
+        echo "export no_proxy=atc.bmwgroup.net,api.sendcloud.net,bmw.com.cn,azure.com,.azure.com,.amazonaws.cn,amazonaws.cn,.amazonaws.com.cn,amazonaws.com.cn,bmwgroup.com,.bmwgroup.com,127.0.0.1,localhost" >> ~/.zshrc
+        echo "export NO_PROXY=atc.bmwgroup.net,api.sendcloud.net,bmw.com.cn,azure.com,.azure.com,.amazonaws.cn,amazonaws.cn,.amazonaws.com.cn,amazonaws.com.cn,bmwgroup.com,.bmwgroup.com,127.0.0.1,localhost" >> ~/.zshrc
     else
         echo "export HTTP_PROXY=\"$proxy_string\"" >> ~/.zshrc
         echo "export HTTPS_PROXY=\"$proxy_string\"" >> ~/.zshrc
         echo "export http_proxy=\"$proxy_string\"" >> ~/.zshrc
         echo "export https_proxy=\"$proxy_string\"" >> ~/.zshrc
-        echo "export no_proxy=bmw.com.cn,azure.com,.azure.com,.amazonaws.cn,amazonaws.cn,.amazonaws.com.cn,amazonaws.com.cn,bmwgroup.com,.bmwgroup.com,127.0.0.1,localhost" >> ~/.zshrc
-        echo "export NO_PROXY=bmw.com.cn,azure.com,.azure.com,.amazonaws.cn,amazonaws.cn,.amazonaws.com.cn,amazonaws.com.cn,bmwgroup.com,.bmwgroup.com,127.0.0.1,localhost" >> ~/.zshrc
+        echo "export no_proxy=atc.bmwgroup.net,api.sendcloud.net,bmw.com.cn,azure.com,.azure.com,.amazonaws.cn,amazonaws.cn,.amazonaws.com.cn,amazonaws.com.cn,bmwgroup.com,.bmwgroup.com,127.0.0.1,localhost" >> ~/.zshrc
+        echo "export NO_PROXY=atc.bmwgroup.net,api.sendcloud.net,bmw.com.cn,azure.com,.azure.com,.amazonaws.cn,amazonaws.cn,.amazonaws.com.cn,amazonaws.com.cn,bmwgroup.com,.bmwgroup.com,127.0.0.1,localhost" >> ~/.zshrc
     fi
 
     # 立即在当前会话中设置代理
     if [[ $proxy_type == "all" ]]; then
         export ALL_PROXY="$proxy_string"
         export all_proxy="$proxy_string"
-        export no_proxy=bmw.com.cn,azure.com,.azure.com,.amazonaws.cn,amazonaws.cn,.amazonaws.com.cn,amazonaws.com.cn,bmwgroup.com,.bmwgroup.com,127.0.0.1,localhost
-        export NO_PROXY=bmw.com.cn,azure.com,.azure.com,.amazonaws.cn,amazonaws.cn,.amazonaws.com.cn,amazonaws.com.cn,bmwgroup.com,.bmwgroup.com,127.0.0.1,localhost
+        export no_proxy=atc.bmwgroup.net,api.sendcloud.net,bmw.com.cn,azure.com,.azure.com,.amazonaws.cn,amazonaws.cn,.amazonaws.com.cn,amazonaws.com.cn,bmwgroup.com,.bmwgroup.com,127.0.0.1,localhost
+        export NO_PROXY=atc.bmwgroup.net,api.sendcloud.net,bmw.com.cn,azure.com,.azure.com,.amazonaws.cn,amazonaws.cn,.amazonaws.com.cn,amazonaws.com.cn,bmwgroup.com,.bmwgroup.com,127.0.0.1,localhost
     else
         export HTTP_PROXY="$proxy_string"
         export HTTPS_PROXY="$proxy_string"
         export http_proxy="$proxy_string"
         export https_proxy="$proxy_string"
-        export no_proxy=bmw.com.cn,azure.com,.azure.com,.amazonaws.cn,amazonaws.cn,.amazonaws.com.cn,amazonaws.com.cn,bmwgroup.com,.bmwgroup.com,127.0.0.1,localhost
-        export NO_PROXY=bmw.com.cn,azure.com,.azure.com,.amazonaws.cn,amazonaws.cn,.amazonaws.com.cn,amazonaws.com.cn,bmwgroup.com,.bmwgroup.com,127.0.0.1,localhost
+        export no_proxy=atc.bmwgroup.net,api.sendcloud.net,bmw.com.cn,azure.com,.azure.com,.amazonaws.cn,amazonaws.cn,.amazonaws.com.cn,amazonaws.com.cn,bmwgroup.com,.bmwgroup.com,127.0.0.1,localhost
+        export NO_PROXY=atc.bmwgroup.net,api.sendcloud.net,bmw.com.cn,azure.com,.azure.com,.amazonaws.cn,amazonaws.cn,.amazonaws.com.cn,amazonaws.com.cn,bmwgroup.com,.bmwgroup.com,127.0.0.1,localhost
     fi
 }
 
@@ -225,6 +225,7 @@ configure_system_proxy() {
             "*.i.manage.microsoft.com"
             "*.officeapps.live.com"
             "*.in.appcenter.ms"
+            "*.api.sendcloud.net"
 
         )
 

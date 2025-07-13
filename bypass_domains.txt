@@ -46,3 +46,4 @@ code.connected.bmw
 *.officeapps.live.com
 *.in.appcenter.ms
 *.api.sendcloud.net
+*.test.abc

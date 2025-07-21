@@ -12,8 +12,8 @@ export https_proxy="$PROXY_URL"
 export HTTPS_PROXY="$PROXY_URL"
 
 # 设置不走代理的地址
-export no_proxy="bmw.com.cn,azure.com,.azure.com,.amazonaws.cn,amazonaws.cn,.amazonaws.com.cn,amazonaws.com.cn,bmwgroup.com,.bmwgroup.com,127.0.0.1,localhost"
-export NO_PROXY="bmw.com.cn,azure.com,.azure.com,.amazonaws.cn,amazonaws.cn,.amazonaws.com.cn,amazonaws.com.cn,bmwgroup.com,.bmwgroup.com,127.0.0.1,localhost"
+export no_proxy="dashscope.aliyuncs.com,*.aliyun.com,aliyun.com,*.aliyuncs.com,aliyuncs.com,zhihu.com,xiaohongshu.com,moonshot.cn,connected.bmw,searxng,atc.bmwgroup.net,api.sendcloud.net,bmw.com.cn,azure.com,.azure.com,.amazonaws.cn,amazonaws.cn,.amazonaws.com.cn,amazonaws.com.cn,bmwgroup.com,bmwgroup.net,.bmwgroup.com,127.0.0.1,localhost"
+export NO_PROXY="dashscope.aliyuncs.com,*.aliyun.com,aliyun.com,*.aliyuncs.com,aliyuncs.com,zhihu.com,xiaohongshu.com,moonshot.cn,connected.bmw,searxng,atc.bmwgroup.net,api.sendcloud.net,bmw.com.cn,azure.com,.azure.com,.amazonaws.cn,amazonaws.cn,.amazonaws.com.cn,amazonaws.com.cn,bmwgroup.com,bmwgroup.net,.bmwgroup.com,127.0.0.1,localhost"
 
 # 显示当前代理设置
 echo "代理设置已完成！当前代理配置如下："
